@@ -1,0 +1,275 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+.add-tasks-container {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+
+  /* Center the container horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.add-tasks-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.add-tasks-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-checkbox,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add this CSS to your AddTasks.css file */
+
+/* Style for select dropdown */
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none; /* Remove default appearance */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 0 1 1.414-1.414L10 9.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4z'/%3e%3c/svg%3e"); /* Add arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 12px;
+}
+
+/* Style for dropdown options */
+.form-select option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Style for dropdown when expanded */
+.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff; /* Add focus border color */
+}
+
+.form-label-note {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px; /* Add space below label */
+}
+
+
+
+/* Add this CSS to your AddTasks.css file */
+
+/* Style for checkbox container */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for hidden checkbox input */
+.checkbox-container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Style for custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for checked state of custom checkbox */
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff;
+}
+
+/* Style for checkmark icon */
+.checkmark-icon {
+  display: none;
+}
+
+/* Show checkmark icon when checkbox is checked */
+.checkbox-container input[type="checkbox"]:checked + .checkmark .checkmark-icon {
+  display: block;
+}
+
+/* Style for checkmark icon SVG */
+.checkmark-icon svg {
+  fill: #fff;
+  width: 12px;
+  height: 12px;
+}
+
+/* Style for checkbox label */
+.checkbox-label {
+  margin-left: 30px; /* Add space between checkbox and label */
+}
